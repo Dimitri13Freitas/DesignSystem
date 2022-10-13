@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build-deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,7 +19,7 @@ jobs:
             node-version: 16
         
         - name: Install depedencies
-          run: npm ci --force
+          run: npm ci --legacy-peer-deps
 
         - name: build Sotorybook
           run: npm run build-storybook
