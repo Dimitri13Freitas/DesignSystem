@@ -32,7 +32,7 @@ export const customComponent: StoryObj<HeadingProps> = {
   args: {
     asChild: true,
     children: (
-      <h1>Seila</h1>
+      <h1>Lorem Ipsum</h1>
     )
   },
   argTypes:{
